@@ -1,0 +1,39 @@
+<program> ::= { <statement> }
+
+<statement> ::= <assignment>
+              | <conditional>
+              | <loop>
+              | <print>
+              | <fizzbuzz>
+              | <increment>
+              | <end>
+
+<assignment> ::= <identifier> "=" <expression>
+
+<conditional> ::= "nothing is given, everything is earned" <expression>
+                  <block>
+                  "you are my sunshine"
+
+<loop> ::= "goat" <identifier> "<=" <expression>
+           <block>
+           "strive for greatness"
+
+<block> ::= { <statement> }
+
+<print> ::= "it's our ball ain't it" <expression>
+
+<fizzbuzz> ::= "lakers"
+
+<increment> ::= "king me" <identifier>
+
+<end> ::= "smiling through it all, can't believe this my life"
+
+<expression> ::= <term> { ("+" | "-") <term> }
+
+<term> ::= <factor> { ("*" | "/" | "%") <factor> }
+
+<factor> ::= <number> | <identifier> | "(" <expression> ")"
+
+<identifier> ::= string starting with letter
+
+<number> ::= digit+
